@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Football Counter</string>
+    <string name="goal_button">Goal</string>
+    <string name="ammonizioni_button">Ammonizioni</string>
+    <string name="tiri">Tiri</string>
+    <string name="lazio">SS Lazio</string>
+    <string name="trattino">-</string>
+    <string name="roma">AS Roma</string>
+    <string name="resetButton">Nuova partita</string>
+    <string name="goal_lazio">0</string>
+    <string name="goal_roma">0</string>
+    <string name="ammonizioni_lazio">0</string>
+    <string name="ammonizioni_roma">0</string>
+    <string name="tiri_lazio">0</string>
+    <string name="tiri_roma">0</string>
+</resources>

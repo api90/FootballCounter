@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.footballcounter.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/football" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/super_giant"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/extra_giant"
+        android:orientation="vertical">
+
+        <Button
+            style="@style/Buttons"
+            android:layout_margin="@dimen/extra_large_margin"
+            android:background="@color/romaColorButtons"
+            android:textColor="@color/romaTextColor"
+            android:text="@string/goal_button"
+            android:onClick="goalRoma"/>
+
+        <Button
+            style="@style/Buttons"
+            android:background="@color/romaColorButtons"
+            android:textColor="@color/romaTextColor"
+            android:layout_marginLeft="@dimen/extra_large_margin"
+            android:text="@string/tiri"
+            android:onClick="tiriRoma"/>
+
+        <Button
+            style="@style/Buttons"
+            android:layout_margin="@dimen/extra_large_margin"
+            android:background="@color/romaColorButtons"
+            android:textColor="@color/romaTextColor"
+            android:textSize="12sp"
+            android:text="@string/ammonizioni_button"
+            android:onClick="ammonizioniRoma"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fascia_centrale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/squadra"
+        android:paddingLeft="@dimen/giant_margin"
+        android:paddingRight="@dimen/giant_margin"
+        android:paddingBottom="@dimen/small_margin"
+        android:orientation="horizontal">
+
+     <ImageView
+        android:id="@+id/lazio"
+        style="@style/Scudetto"
+         android:layout_weight="1"
+        android:src="@drawable/lazio" />
+
+     <TextView
+        android:id="@+id/lazio_score"
+        style="@style/goal_score"
+        android:layout_weight="1"
+        android:paddingTop="@dimen/big_margin"
+        android:gravity="center"
+        android:text="@string/goal_lazio" />
+
+     <TextView
+        style="@style/goal_score"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/trattino"/>
+
+     <TextView
+        android:id="@+id/roma_score"
+        style="@style/goal_score"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/goal_roma" />
+
+     <ImageView
+        android:id="@+id/Roma"
+        style="@style/Scudetto"
+         android:layout_weight="1"
+        android:src="@drawable/roma"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:textColor="@android:color/white"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/squadra"
+        style="@style/Squadra"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/extra_big_margin"
+        android:layout_marginLeft="@dimen/extra_big_margin"
+        android:text="@string/lazio"/>
+
+    <TextView
+        style="@style/Squadra"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/extra_big_margin"
+        android:layout_marginTop="@dimen/extra_big_margin"
+        android:text="@string/roma"/>
+
+    <TextView
+        android:id="@+id/ammonizioni_lazio"
+        style="@style/scores"
+        android:layout_below="@id/fascia_centrale"
+        android:text="@string/ammonizioni_lazio"
+        android:drawableLeft="@drawable/giallo"/>
+
+    <TextView
+        android:id="@+id/tiri_lazio"
+        style="@style/scores"
+        android:layout_below="@id/ammonizioni_lazio"
+        android:text="@string/tiri_lazio"
+        android:drawableLeft="@drawable/tiri"/>
+
+    <TextView
+        android:id="@+id/ammonizioni_roma"
+        style="@style/scores"
+        android:layout_below="@id/fascia_centrale"
+        android:layout_alignParentRight="true"
+        android:text="@string/ammonizioni_roma"
+        android:drawableRight="@drawable/giallo"/>
+
+    <TextView
+        android:id="@+id/tiri_roma"
+        style="@style/scores"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/ammonizioni_roma"
+        android:text="@string/tiri_roma"
+        android:drawableRight="@drawable/tiri"/>
+
+    <Button
+        style="@style/ResetButton"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/big_margin"
+        android:text="@string/resetButton"
+        android:onClick="reset"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/super_giant"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/extra_giant"
+        android:orientation="vertical">
+
+        <Button
+            style="@style/Buttons"
+            android:background="@color/lazioColorButtons"
+            android:textColor="@android:color/white"
+            android:layout_margin="@dimen/extra_large_margin"
+            android:text="@string/goal_button"
+            android:onClick="goalLazio"/>
+
+        <Button
+            style="@style/Buttons"
+            android:background="@color/lazioColorButtons"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="@dimen/extra_large_margin"
+            android:text="@string/tiri"
+            android:onClick="tiriLazio"/>
+
+        <Button
+            style="@style/Buttons"
+            android:background="@color/lazioColorButtons"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:layout_margin="@dimen/extra_large_margin"
+            android:text="@string/ammonizioni_button"
+            android:onClick="ammonizioniLazio"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

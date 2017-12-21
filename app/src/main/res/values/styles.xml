@@ -1,0 +1,55 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Primary theme color of the app (sets background color of app bar) -->
+        <item name="colorPrimary">#E0E0E0</item>
+        <!-- Background color of buttons in the app -->
+        <item name="colorButtonNormal">#E0E0E0</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Buttons">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">0dp</item>
+    <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="ResetButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#424242</item>
+    </style>
+
+    <style name="Scudetto">
+     <item name="android:layout_width">0dp</item>
+     <item name="android:layout_height">80dp</item>
+    </style>
+
+    <style name="Squadra">
+    <item name="android:textSize" >20sp</item>
+    <item name="android:textColor">#424242</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="goal_score">
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textSize">40sp</item>
+    <item name="android:textColor">#424242</item>
+    </style>
+
+    <style name="scores">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:textColor">#424242</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:drawablePadding">8dp</item>
+    </style>
+</resources>
